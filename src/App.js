@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import House from "./pages/House";
 import Error from "./pages/Error";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
