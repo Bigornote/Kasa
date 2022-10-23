@@ -1,0 +1,71 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    width: 145px;
+    height: 47px;
+  }
+  .navigation ul {
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+    height: 17px;
+
+    li {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: $color-primary;
+      font-weight: 500;
+    }
+
+    .nav-active {
+      position: relative;
+
+      &::after {
+        content: "";
+        height: 2px;
+        width: 0;
+        background: $color-primary;
+        position: absolute;
+        border-radius: 10px;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-animation: anim 0.3s ease forwards;
+        animation: anim 0.6s ease forwards;
+
+        @-webkit-keyframes anim {
+          to {
+            width: 100%;
+          }
+        }
+        @keyframes anim {
+          to {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Desktop
+@media screen and (min-width: 1280px) {
+  .header {
+    .logo {
+      width: 210px;
+      height: 68px;
+    }
+    .navigation ul {
+      width: 250px;
+      height: 34px;
+
+      li {
+        font-size: 24px;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
