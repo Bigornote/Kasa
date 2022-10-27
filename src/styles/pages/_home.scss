@@ -1,0 +1,12 @@
+.logement {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  width: min(100%, 1240px);
+  place-items: center;
+  column-gap: 60px;
+  row-gap: 50px;
+  padding: 50px;
+  margin: 43px auto;
+  border-radius: 25px;
+  background: $grey;
+}
