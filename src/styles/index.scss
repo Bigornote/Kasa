@@ -1,4 +1,13 @@
 @import "./settings";
+
+//PAGES
+@import "./pages/error";
+@import "./pages/home";
+@import "./pages/about";
+@import "./pages/house";
+
+//COMPONENTS
 @import "./components/header";
 @import "./components/footer";
-@import "./pages/error";
+@import "./components/banner";
+@import "./components/card";
