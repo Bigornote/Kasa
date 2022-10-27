@@ -1,0 +1,42 @@
+.error {
+  text-align: center;
+  color: $color-primary;
+  @include verticalCenter;
+  flex-direction: column;
+  height: 100vh;
+  font-weight: 500;
+
+  h1 {
+    font-weight: 700;
+    font-size: 96px;
+  }
+  p {
+    font-size: 18px;
+    white-space: pre-wrap;
+    margin-top: 11px;
+  }
+
+  .link {
+    display: inline-block;
+    margin: 160px 0;
+    font-size: 14px;
+    line-height: 26px;
+    border-bottom: 1px solid $color-primary;
+    margin-top: 133px;
+  }
+}
+
+// Desktop
+@media screen and (min-width: 1280px) {
+  .error {
+    h1 {
+      font-size: 288px;
+    }
+    p {
+      font-size: 36px;
+    }
+    .link {
+      font-size: 18px;
+    }
+  }
+}
