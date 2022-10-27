@@ -3,7 +3,7 @@
   color: $color-primary;
   @include verticalCenter;
   flex-direction: column;
-  height: 100vh;
+  height: 90vh;
   font-weight: 500;
 
   h1 {
@@ -34,9 +34,11 @@
     }
     p {
       font-size: 36px;
+      margin-top: 66px;
     }
     .link {
       font-size: 18px;
+      margin-top: 182px;
     }
   }
 }

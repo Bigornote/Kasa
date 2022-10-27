@@ -2,8 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
 
-  .logo {
+  .logo img {
     width: 145px;
     height: 47px;
   }
@@ -54,7 +55,8 @@
 // Desktop
 @media screen and (min-width: 1280px) {
   .header {
-    .logo {
+    padding: 40px 100px 0;
+    .logo img {
       width: 210px;
       height: 68px;
     }
