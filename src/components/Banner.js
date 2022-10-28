@@ -2,7 +2,7 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 
 const Banner = () => {
-  // Ce hook renvoie l' locationobjet courant. Effectuer un effet secondaire chaque fois que l'emplacement actuel change
+  // Ce hook renvoie l'objet courant location. Effectuer un effet secondaire chaque fois que l'emplacement actuel change
   const { pathname } = useLocation();
   if (pathname === "/")
     return (

@@ -1,0 +1,59 @@
+details {
+  margin-bottom: 20px;
+  user-select: none;
+
+  summary {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: $white;
+    background-color: $color-primary;
+    border-radius: 5px;
+    list-style: none;
+    cursor: pointer;
+    padding: 10px;
+    transform: translate(-0%, 20%);
+  }
+  p,
+  ul {
+    background-color: $grey;
+    border-radius: 5px;
+    margin-top: 0;
+    padding: 30px 15px;
+  }
+  p,
+  li {
+    font-weight: 400;
+    font-size: 12px;
+    color: $color-primary;
+  }
+  ul {
+    list-style: none;
+  }
+}
+
+details[open] summary .fa-chevron-down {
+  transform: rotate(-180deg);
+}
+
+.fa-chevron-down {
+  transition: all 0.3s;
+}
+
+//desktop
+@media screen and (min-width: 1280px) {
+  details {
+    margin-bottom: 31px;
+
+    li {
+      font-size: 18px;
+    }
+    summary,
+    p {
+      font-size: 24px;
+    }
+    summary {
+      padding: 10px 20px;
+    }
+  }
+}
