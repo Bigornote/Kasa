@@ -15,7 +15,7 @@ const Home = () => {
     fetch("logements.json")
       .then((res) => res.json())
       .then((data) => {
-        setLogementData(data.res);
+        setLogementData(data.logement);
       })
       .catch((err) => console.log(err));
   }, []);
