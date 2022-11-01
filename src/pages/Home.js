@@ -2,13 +2,22 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Banner from "../components/Banner";
 import Card from "../components/Card";
-import axios from "axios";
+// import axios from "axios";
 
 const Home = () => {
   const [logementData, setLogementData] = useState([]);
 
+  // useEffect(() => {
+  //   axios.get("logements.json").then((data) => setLogementData(data.response));
+  // }, []);
+
   useEffect(() => {
-    axios.get("logements.json").then((res) => setLogementData(res.data));
+    fetch("logements.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setLogementData(data.res);
+      })
+      .catch((err) => console.log(err));
   }, []);
 
   return (
