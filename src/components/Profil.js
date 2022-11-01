@@ -1,6 +1,7 @@
 import React from "react";
 
 const Profil = ({ dataLogement }) => {
+  console.log(dataLogement.host);
   // const removeSpaceHost = dataLogement.host.name.replace(" ", "\n");
   return (
     <section className="profil">
@@ -13,8 +14,8 @@ const Profil = ({ dataLogement }) => {
         <div className="profil-user">
           {/* <div>{removeSpaceHost}</div> */}
           <img
-            src={dataLogement.host.picture}
-            alt={`Photographie de Profil de ${dataLogement.host.name}`}
+            src={dataLogement.host}
+            alt={`Photographie de Profil de ${dataLogement.host}`}
           />
           {/* Ajouter le rating des étoiles */}
         </div>

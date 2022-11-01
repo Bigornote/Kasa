@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-// import Profil from "../components/Profil";
+import Profil from "../components/Profil";
 import Accordeon from "../components/Accordeon";
 import Error from "./Error";
 
@@ -30,7 +30,7 @@ const House = () => {
     return (
       <main className="house">
         <div>
-          {/* <Profil dataLogement={dataLogement} /> */}
+          <Profil dataLogement={dataLogement} />
           <div>
             <Accordeon title={"Description"} content={description} />
             <Accordeon title={"Équipements"} content={equipments} />
