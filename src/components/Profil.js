@@ -8,6 +8,8 @@ const Profil = () => {
   const { id } = useParams();
   const details = Data.find((el) => el.id === id);
 
+  const removeSpaceHost = details.host.name.replaceAll(" ", "\n");
+
   return (
     <section className="info-profil">
       <div className="left-container">
@@ -17,7 +19,7 @@ const Profil = () => {
       </div>
       <div className="right-container">
         <div className="host-info">
-          <span>{details.host.name}</span>
+          <div className="host-name">{removeSpaceHost}</div>
           <img
             className="host-picture"
             alt="house"

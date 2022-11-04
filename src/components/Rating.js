@@ -14,7 +14,7 @@ const Rating = ({ rating }) => {
         return (
           <FaStar
             key={index}
-            className="stars"
+            className="star"
             color={rating > index ? color.red : color.grey}
           />
         );

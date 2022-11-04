@@ -4,7 +4,7 @@ import logo from "../assets/logo.png";
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className="header container">
       <div className="logo">
         <img src={logo} alt="Logo Kasa" />
       </div>
