@@ -1,0 +1,76 @@
+.slideshow {
+  position: relative;
+  margin-bottom: 15px;
+
+  .slideshow-img {
+    width: 100%;
+    height: 255px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .icon-prev,
+  .icon-next {
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    transform: translate(0%, -50%);
+    font-size: 24px;
+    color: $white;
+    cursor: pointer;
+  }
+
+  .icon-prev {
+    left: 2%;
+  }
+
+  .icon-next {
+    right: 2%;
+  }
+
+  .slideshow-counter {
+    display: none;
+  }
+}
+
+//Tablet *
+@media screen and (min-width: 768px) {
+  .slideshow-counter {
+    display: block;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    color: $white;
+    font-weight: 500;
+    font-size: 14px;
+  }
+}
+
+//Desktop *
+@media screen and (min-width: 1280px) {
+  .slideshow {
+    margin-bottom: 30px;
+
+    .slideshow-img {
+      height: 415px !important;
+      border-radius: 25px !important;
+    }
+
+    .slideshow-counter {
+      font-size: 18px;
+    }
+
+    .icon-prev,
+    .icon-next {
+      font-size: 90px !important;
+    }
+
+    .icon-prev {
+      left: 1% !important;
+    }
+
+    .icon-next {
+      right: 1% !important;
+    }
+  }
+}

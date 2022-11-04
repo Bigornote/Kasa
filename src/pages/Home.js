@@ -5,7 +5,7 @@ import Data from "../data/logements.json";
 
 const Home = () => {
   return (
-    <main className="home">
+    <main className="home container">
       <Banner />
 
       {/* logement */}

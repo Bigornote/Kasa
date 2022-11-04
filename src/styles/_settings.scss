@@ -33,3 +33,10 @@ a {
   color: $color-primary;
   text-decoration: none;
 }
+
+.container {
+  position: relative;
+  margin: auto;
+  max-width: 1240px;
+  width: 100%;
+}

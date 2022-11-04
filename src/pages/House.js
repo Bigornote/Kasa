@@ -15,15 +15,15 @@ const House = () => {
   }
 
   return (
-    <div>
+    <main className="house container">
       <Slideshow pictures={details.pictures} />
       <Profil />
 
-      <section>
+      <section className="accordeon">
         <Accordeon title={"Description"} content={details.description} />
         <Accordeon title={"Équipements"} content={details.equipments} />
       </section>
-    </div>
+    </main>
   );
 };
 

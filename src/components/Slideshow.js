@@ -15,11 +15,11 @@ const Slideshow = ({ pictures }) => {
 
   return (
     <div className="slideshow">
-      <img src={pictures[current]} alt="Pictures" className="slideshow-image" />
-      <FaChevronLeft onClick={prev} className="prev-arrow">
+      <img src={pictures[current]} alt="Pictures" className="slideshow-img" />
+      <FaChevronLeft onClick={prev} className="icon-prev">
         Prev
       </FaChevronLeft>
-      <FaChevronRight onClick={next} className="next-arrow">
+      <FaChevronRight onClick={next} className="icon-next">
         Next
       </FaChevronRight>
     </div>

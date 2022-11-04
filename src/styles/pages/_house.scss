@@ -1,0 +1,19 @@
+.house {
+  .accordeon {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .house {
+    .accordeon {
+      display: flex;
+      width: 100%;
+      gap: 80px;
+      li,
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}

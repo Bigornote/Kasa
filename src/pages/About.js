@@ -4,7 +4,7 @@ import Banner from "../components/Banner";
 
 const About = () => {
   return (
-    <main className="about">
+    <main className="about container">
       <Banner />
       <section className="about-accordeon">
         <Accordeon
