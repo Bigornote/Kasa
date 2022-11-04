@@ -1,23 +1,31 @@
 import React from "react";
+import { useParams } from "react-router-dom";
+import Tags from "./Tags";
+import Rating from "./Rating";
+import Data from "../data/logements.json";
 
-const Profil = ({ dataLogement }) => {
-  console.log(dataLogement.host);
-  // const removeSpaceHost = dataLogement.host.name.replace(" ", "\n");
+const Profil = () => {
+  const { id } = useParams();
+  const details = Data.find((el) => el.id === id);
+
   return (
-    <section className="profil">
-      <div className="info-left">
-        <h1 className="profil-title">{dataLogement.title}</h1>
-        <h2 className="profil-location">{dataLogement.location}</h2>
-        {/* ajouter les tags ici */}
+    <section className="info-profil">
+      <div className="left-container">
+        <h1 className="title">{details.title}</h1>
+        <h2 className="location">{details.location}</h2>
+        <Tags tags={details.tags} />
       </div>
-      <div className="info-right">
-        <div className="profil-user">
-          {/* <div>{removeSpaceHost}</div> */}
+      <div className="right-container">
+        <div className="host-info">
+          <span>{details.host.name}</span>
           <img
-            src={dataLogement.host}
-            alt={`Photographie de Profil de ${dataLogement.host}`}
+            className="host-picture"
+            alt="house"
+            src={details.host.picture}
           />
-          {/* Ajouter le rating des étoiles */}
+        </div>
+        <div className="rating">
+          <Rating rating={details.rating} />
         </div>
       </div>
     </section>
