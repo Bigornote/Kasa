@@ -31,18 +31,22 @@
   .slideshow-counter {
     display: none;
   }
+  .counter {
+    display: none;
+  }
 }
 
 //Tablet *
 @media screen and (min-width: 768px) {
-  .slideshow-counter {
-    display: block;
+  .counter {
+    display: block !important;
     position: absolute;
-    bottom: 15%;
+    bottom: 25px;
     left: 50%;
+    transform: translate(-50%, 0%);
     color: $white;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 
