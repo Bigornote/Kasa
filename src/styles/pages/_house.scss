@@ -4,11 +4,19 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 768px) {
   .house {
     .accordeon {
       display: flex;
       width: 100%;
+      gap: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .house {
+    .accordeon {
       gap: 80px;
       li,
       p {
