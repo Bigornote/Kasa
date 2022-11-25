@@ -8,6 +8,15 @@ const Slideshow = ({ pictures }) => {
 
   if (all === 0) {
     return "";
+  } else if (all === 1) {
+    return (
+      <div className="slideshow">
+        <img src={pictures[current]} alt="Pictures" className="slideshow-img" />
+        <div className="counter">
+          {current + 1}/{all}
+        </div>
+      </div>
+    );
   }
 
   const prev = () => {
